@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_maintainance_display"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:background="@color/white"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp">
+
+    <RelativeLayout
+        android:id="@+id/linear_maintainance"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_maintainance"
+            android:layout_width="63dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/maintainance" />
+
+        <TextView
+            android:id="@+id/maintainance_list_part"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/image_maintainance"
+            android:fontFamily="@font/font_primary"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/maintainance_list_date"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="170dp"
+            android:layout_toEndOf="@+id/image_maintainance"
+            android:fontFamily="@font/font_primary"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/maintainance_list_remarks"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toEndOf="@+id/image_maintainance"
+            android:fontFamily="@font/font_primary"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/maintainance_list_id"
+            android:layout_width="246dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="33dp"
+            android:gravity="center"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="22dp"
+            android:layout_toEndOf="@+id/image_maintainance"
+            android:fontFamily="@font/font_primary"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

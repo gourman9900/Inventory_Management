@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Inventory_Management</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="title_barcode">Barcode</string>
+    <string name="title_scanner">Scanner</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_logout">Logout</string>
+</resources>

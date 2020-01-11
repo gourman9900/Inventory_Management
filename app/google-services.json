@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "923230427034",
+    "firebase_url": "https://inventorymanagementsignin.firebaseio.com",
+    "project_id": "inventorymanagementsignin",
+    "storage_bucket": "inventorymanagementsignin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923230427034:android:c25a7b5258df0a98d00c23",
+        "android_client_info": {
+          "package_name": "com.irne.inventory_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923230427034-dm478qdikshgq0bu3jjp6ha3vae1dvoj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.irne.inventory_management",
+            "certificate_hash": "1c84a348573ad34d3fc3fce76a3dd028e8a3600c"
+          }
+        },
+        {
+          "client_id": "923230427034-i1k8mujdmduksoja739oskcj4k82em25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfmoce3KcOuYM_KG7C-gI8jQ61xp3clXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923230427034-i1k8mujdmduksoja739oskcj4k82em25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

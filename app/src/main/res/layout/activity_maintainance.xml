@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaintainanceActivity"
+    android:orientation="vertical"
+    android:id="@+id/constraint_maintainance_container"
+    android:background="@drawable/can_you_feel_the_love_tonight">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_maintainance"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_maintainance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/maintainance_date"
+                android:layout_width="344dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/text_layout"
+                android:cursorVisible="true"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:fontFamily="@font/font_primary"
+                android:hint="Enter Maintainance Date"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/maintainance_part"
+                android:layout_width="344dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_layout"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/font_primary"
+                android:hint="Enter parts"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maintainance_date" />
+
+            <EditText
+                android:id="@+id/maintainance_remark"
+                android:layout_width="344dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_layout"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/font_primary"
+                android:hint="Enter remark"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maintainance_part" />
+
+            <EditText
+                android:id="@+id/maintainance_id"
+                android:layout_width="344dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_layout"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/font_primary"
+                android:hint="Enter Maintainance id"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maintainance_remark" />
+
+            <Button
+                android:id="@+id/update_maintainance"
+                android:layout_width="173dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_button"
+                android:elevation="10dp"
+                android:text="Maintainance"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maintainance_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/update_SN_maintainance"
+        android:layout_width="386dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/text_layout"
+        android:fontFamily="@font/font_primary"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

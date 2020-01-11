@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_barcode"
+        android:icon="@drawable/barcode"
+        android:title="@string/title_barcode"
+        />
+
+    <item
+        android:id="@+id/navigation_scanner"
+        android:icon="@drawable/scanner"
+        android:title="@string/title_scanner" />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/chat"
+        android:title="@string/title_chat" />
+
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/logout"
+        android:title="@string/title_logout" />
+
+</menu>

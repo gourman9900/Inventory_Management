@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:background="@drawable/animation_list"
+    android:id="@+id/constraint_signup">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="1"
+        app:lottie_fileName="signup_2.json"
+        app:lottie_loop="true" />
+
+    <EditText
+        android:id="@+id/signUpName"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/text_layout"
+        android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/font_primary"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signUpEmail"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/text_layout"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/font_primary"
+        android:hint="Enter Email"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpName" />
+
+    <EditText
+        android:id="@+id/signUpPassword"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/text_layout"
+        android:drawableLeft="@drawable/password2"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/font_primary"
+        android:hint="Enter Password"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpEmail" />
+
+    <EditText
+        android:id="@+id/signUpId"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/text_layout"
+        android:drawableLeft="@drawable/id"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/font_primary"
+        android:hint="Enter Unique ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpPassword" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/font_primary"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpId" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationview"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpId"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="signupactivity.json"
+        app:lottie_loop="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

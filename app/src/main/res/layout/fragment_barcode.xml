@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/love_and_liberty"
+    android:theme="@style/AppTheme"
+    android:id="@+id/constraint_home_fragment">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="415dp"
+        android:layout_height="182dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_input"
+        app:layout_constraintVertical_bias="0.55"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="barcode.json"
+        app:lottie_loop="true" />
+
+    <ImageView
+        android:id="@+id/barcode"
+        android:layout_width="221dp"
+        android:layout_height="181dp"
+        android:background="@drawable/layout_qr"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/animationView"
+        app:layout_constraintEnd_toEndOf="@+id/animationView"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="@+id/animationView"
+        app:layout_constraintTop_toTopOf="@+id/animationView"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="?attr/colorAccent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_input"
+        android:layout_width="match_parent"
+        android:layout_height="473dp"
+        android:layout_margin="8dp"
+        android:paddingBottom="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/AppTheme"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="299dp">
+
+            <EditText
+                android:id="@+id/storage_SN"
+                android:layout_width="364dp"
+                android:layout_height="54dp"
+                android:background="@drawable/text_layout"
+                android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/font_primary"
+                android:hint="Enter S/N of the product"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.09" />
+
+            <EditText
+                android:id="@+id/storage_Name"
+                android:layout_width="364dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_layout"
+                android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/font_primary"
+                android:hint="Enter Name of the Product"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/storage_SN" />
+
+            <EditText
+                android:id="@+id/storage_mdate"
+                android:layout_width="362dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/text_layout"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/white"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/font_primary"
+                android:hint="Enter Date of Manufacture"
+                android:inputType="date"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/storage_Name" />
+
+            <EditText
+                android:id="@+id/storage_MaintainanceDate"
+                android:layout_width="364dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_layout"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/white"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/font_primary"
+                android:hint="Enter Last Date of Maintainance"
+                android:inputType="date"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/storage_mdate" />
+
+            <EditText
+                android:id="@+id/storage_maintainanceid"
+                android:layout_width="364dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_layout"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/font_primary"
+                android:hint="Enter Maintainance id"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/text_cursor_drawable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/storage_MaintainanceDate" />
+
+
+            <Button
+                android:id="@+id/store"
+                android:layout_width="114dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_button"
+                android:elevation="10dp"
+                android:fontFamily="@font/font_primary_bold"
+                android:text="Store"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/storage_maintainanceid" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
